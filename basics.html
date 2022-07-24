@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Html Page</title>
+        <script src="something.js"></script>
+        <style>
+            div {
+                border-bottom: 1px #111 solid;
+            }
+            table, tr, th, td{
+                border: 1px #000 solid;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            br{
+                padding-bottom: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="file:///D:/personal/Learning/basics.html">Home</a></li>
+                <li><a href="file:///C:/Users/dhivya%20s/Desktop/codewithMe/C%20C++/mywebsite.htm" target="_top">Button</a></li>
+            </ul>
+        </nav>
+        <div id="first">
+            <h1>Headings :</h1><br/>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+        <div>
+            <h1>Paragraph  : </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae 
+                architecto, perspiciatis nulla aliquam excepturi distinctio reiciendis corporis consequatur quo atque, 
+                ratione et dolores, nostrum repellat laborum facilis natus odit?</p>
+        </div>
+        <div>
+            <h1>Formatting : </h1>
+            <b>Bold</b>
+            <i>italic</i>
+            <u>underline</u>
+        </div>
+        <div>
+            <h1>Links :</h1>
+            <a href="#first">Go to top</a><br/>
+            <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">open some website</a>
+            <br/><a href="mailto:sdhivyamkr@gmail.com">mail to myself</a>
+        </div>
+        <div>
+            <h1>Images :</h1>
+            <img src="../Learning/HTML Learnings/rose.jpg" alt="rose" width ="50%" height="50%">
+        </div>
+        <div>
+            <h1>Tables : </h1>
+            <table>
+                <tr>
+                    <th>student</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">A</td>
+                    <td>a1</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>a2</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>a3</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total </td>
+                    <td>300</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Lists : </h1>
+            <h2>Unordered list</h2>
+            <ul type="square">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+            </ul>
+            <h2>Ordered List</h2> 
+            <ol type="1">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+            </ol>
+        </div>
+        <div>
+            <h1>IFrame</h1>
+            <iframe src="file:///D:/personal/Learning/basics.html" width="100%" height="auto"></iframe>
+        </div>
+        <div>
+            <h1>Forms : </h1>
+            <form>
+                <input type="text" name="Fname" id="fname"/>
+                <label for="fname">Name : </label><br/>
+                <input type="password" name="fpassword" id="fpassword">
+                <label for="fpassword">Password</label><br/>
+
+                <input type="radio" name="fradio" id="fradio"/>
+                <label for="fradio1">Radio 1</label><br/>
+                <input type="radio" name="fradio" id="fradio1" />
+                <label for="fradio1">Radio 2</label><br/>
+
+                <input type="checkbox" name="check1" id="check1" checked/>
+                <label for="check1">Checkbox 1</label><br/>
+                <input type="checkbox" name="check2" id="check2"/>
+                <label for="check2">Checkbox 2</label><br/>
+
+                <address name="address1" id="address1">
+                    <a>Mail me</a>
+                </address><br/>
+                
+
+                <select name="dropDown1" id="dropdown1">
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                    <option value="four">four</option>
+                    <option value="five">five</option>
+                </select>
+                <label for="dropdown1">Dropdown</label><br/>
+
+                <input type="file" accept=".pdf" name="pdfinput" id="pdfinput"/>
+                <label for="pdfinput">File uploader</label><br/>
+
+                <input type="file" accept="image/*" name="imginput" id="imginput"/>
+                <label for="imginput">Image uploader</label><br/>
+
+                <button type="submit">Submit</button><br/>
+                <button type="reset">Reset</button><br/>
+            </form>
+        </div>
+    </body>
+</html>
