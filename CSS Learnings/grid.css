@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(232, 239, 237);
+}
+
+.albums-container > img{
+    width: 100%;
+}
+.wrapper, .albums-container, .nav-container, .highlights-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.f-66{
+    font-size: 66px !important;
+}
+.header, .highlights, .posts,.albums, .footer {
+    grid-column: 1 / span 4; 
+}
+li, .price-container button{
+    background-color: rgb(209, 222, 234);
+    box-shadow: 3px 3px 5px 2px rgb(175, 175, 175);
+}
+li:hover, .price-container button:hover{
+    background-color: rgb(54, 56, 56);
+    box-shadow: 3px 3px 5px 2px rgb(129, 129, 129);
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+a, .price-container button{
+    text-decoration: none;
+    color: black;    
+    text-align: center;
+    line-height: 1.9;
+}
+a{
+    padding: 0px 55px;
+    display: block;
+}
+a:hover, .price-container button:hover{
+    color: white;
+}
+
+.main-content{
+    grid-column: 1 / span 3;
+}
+.price-container {
+    display: grid;
+    gap: 20px
+}
+.wrapper,.albums-container{
+    gap: 20px;
+}
+.posts-container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.main-container{
+    color: white;
+    background-image: url("https://get.wallhere.com/photo/sunlight-leaves-water-nature-grass-photography-water-drops-branch-green-dew-leaf-flower-plant-drop-flora-petal-1920x1080-px-botany-close-up-macro-photography-plant-stem-moisture-545274.jpg");
+    background-size: cover;
+    height: 100%;
+    min-width: fit-content;
+    align-content: center;
+    justify-content: center;
+}
+.main-container h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin: auto;
+}
+.main-container p, .highlights-container p, .posts-container p{
+    text-align: justify;
+    padding: 2% 10%;
+}
+.main-container button{
+    border-radius: 5px;
+    border: 1px solid rgb(186, 185, 185);
+    box-sizing: border-box;
+    width: 155px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+.price-container > div {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.price-container div, .posts-container{
+    background-color: rgb(220, 217, 217);
+    box-shadow: 8px 1px 16px 0px rgb(129 129 129);
+}
+.highlights-container div, .footer{
+    background-color: rgb(184, 221, 236);
+    box-shadow: 8px 1px 16px 0px rgb(129 129 129);
+}
+.price-container button{
+    margin-bottom: 5%;
+    border: none;
+}
+.center{
+    text-align: center;
+}
+.posts-container img{
+    flex : 2;
+}
+.posts-container p {
+    flex: 3;
+}
+.footer{
+    border-radius: 10px;
+}
+@media only screen and (max-width : 750px) {
+    .main-content, .price{
+        grid-column: 1 / span 4;
+    }
+    .nav-container {
+        grid-template-columns: auto;
+    }
+    .price-container, .highlights-container, .albums-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .posts-container{
+        flex-direction: column;
+    }
+    .main-container button{
+        margin-bottom: 10px;
+    }
+}
